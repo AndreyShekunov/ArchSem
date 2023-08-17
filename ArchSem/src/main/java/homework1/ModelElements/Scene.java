@@ -32,7 +32,15 @@ public class Scene {
         return Model;
     }
 
-
+//     // заглушка
+//     public Type1 method1(Type1 t1) {
+//     return t1;
+//     }
+//
+//     // заглушка
+//     public Type1 method1(Type1 t1, Type2 t2) {
+//     return t1;
+//     }
 
 
 }
