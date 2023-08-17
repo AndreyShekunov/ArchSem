@@ -5,12 +5,16 @@ import homework1.Stuff.Point3D;
 
 import java.awt.*;
 
+// Класс источников света
 public class Flash {
-    public Point3D location;
-    public Angle3D angle;
-    public Color color;
-    public float power;
+    public Point3D Location;
+    public Angle3D Angle;
+    public Color Color;
+    public float Power;
 
+    // поворот источников света
     public void Rotate(Angle3D angle){}
-    public void Move(Point3D location){}
+
+    // перемещение к точке
+    public void Move(Point3D point){}
 }
