@@ -1,18 +1,38 @@
 package homework1.ModelElements;
 
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Scene {
-    public int id;
-    public List<PoliginalModel> models = new ArrayList<>();
-    public List<Flash> flashes = new ArrayList<>();
+    public int ID;
+    public List<PoligonalModel> Models;
+    public List<Flash> Flashes;
+    public List<Camera> Cameras = new ArrayList<Camera>();
 
-    public Type method1(Type type) {
-        return type;
+    // Конструктор
+    public Scene(int id, List<PoligonalModel> models, List<Flash> flashes, List<Camera> cameras) throws Exception {
+        this.ID = id;
+        if (!models.isEmpty()) {
+            this.Models = models;
+        } else {
+            throw new Exception("Должна быть хотябы одна модель");
+        }
+        this.Flashes = flashes;
+        if (!cameras.isEmpty()) {
+            this.Cameras = cameras;
+        } else {
+            throw new Exception("Должна быть хотябы одна камера");
+        }
     }
-    public Type method2(Type type, Type type2) {
-        return type;
+
+    public <T> T method1(T flash) {
+        return flash;
     }
+    public <T, E> T method2(T Model, E Flash) {
+        return Model;
+    }
+
+
+
+
 }
