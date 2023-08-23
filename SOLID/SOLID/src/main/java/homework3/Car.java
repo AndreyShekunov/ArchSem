@@ -2,6 +2,8 @@ package homework3;
 
 import java.awt.*;
 
+// абстрактный класс автомобиль
+
 public abstract class Car {
     protected String brand;
     protected String model;
