@@ -26,5 +26,17 @@ public class Main {
         sweeperCar.turnOnHeadlights();
         sweeperCar.turnOnWipers();
         sweeperCar.sweepStreet();
+
+        System.out.println();
+
+        // Создание грузовика
+        Truck truck = new Truck("КамАЗ", "65115", Color.red, "Ковшевой", 4,
+                "Дизель", "Гидростатическая", 6.7);
+
+        truck.move();
+        truck.service();
+        truck.transmissionShift();
+        truck.turnOnFogLights();
+        truck.cargoTransportation();
     }
 }
