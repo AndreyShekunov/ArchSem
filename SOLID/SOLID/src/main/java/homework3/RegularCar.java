@@ -34,4 +34,9 @@ public class RegularCar extends Car{
     public void turnOnWipers() {
         System.out.println("У автомобиля " + brand + " " + model + " включились дворники");
     }
+
+    @Override
+    public void refueling() {
+        System.out.println("Автомобиль " + brand + " " + model + " заправляется");
+    }
 }

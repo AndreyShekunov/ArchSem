@@ -4,7 +4,7 @@ import java.awt.*;
 
 // абстрактный класс автомобиль
 
-public abstract class Car {
+public abstract class Car implements GasStation{
     protected String brand;
     protected String model;
     protected Color color;
