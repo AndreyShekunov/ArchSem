@@ -36,4 +36,24 @@ public class SweeperCar extends Sweeper{
     public void sweepStreet() {
         System.out.println("Подметально-уборочная машина " + brand + " " + model + " подметает улицу");
     }
+
+    @Override
+    public void refueling() {
+
+    }
+
+    @Override
+    public void wipingWindshield() {
+
+    }
+
+    @Override
+    public void wipingHeadlights() {
+
+    }
+
+    @Override
+    public void wipingMirrors() {
+
+    }
 }

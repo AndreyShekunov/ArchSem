@@ -42,4 +42,24 @@ public class Truck extends FreightCar{
     public void cargoTransportation() {
         System.out.println("Грузовик " + brand + " " + model + " перевозит груз");
     }
+
+    @Override
+    public void refueling() {
+
+    }
+
+    @Override
+    public void wipingWindshield() {
+
+    }
+
+    @Override
+    public void wipingHeadlights() {
+
+    }
+
+    @Override
+    public void wipingMirrors() {
+
+    }
 }

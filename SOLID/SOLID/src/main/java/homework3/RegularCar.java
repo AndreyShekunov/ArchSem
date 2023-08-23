@@ -39,4 +39,19 @@ public class RegularCar extends Car{
     public void refueling() {
         System.out.println("Автомобиль " + brand + " " + model + " заправляется");
     }
+
+    @Override
+    public void wipingWindshield() {
+        System.out.println("У автомобиля " + brand + " " + model + " выполняется протирка лобового стекла");
+    }
+
+    @Override
+    public void wipingHeadlights() {
+        System.out.println("У автомобиля " + brand + " " + model + " выполняется протирка фар");
+    }
+
+    @Override
+    public void wipingMirrors() {
+        System.out.println("У автомобиля " + brand + " " + model + " выполняется протирка зеркал");
+    }
 }

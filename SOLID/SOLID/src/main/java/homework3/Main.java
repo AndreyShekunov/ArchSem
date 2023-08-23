@@ -5,7 +5,7 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
         // Создание обычного автомобиля (класс RegularCar)
-        RegularCar regularCar = new RegularCar("ВАЗ", "2114", Color.black, "Седан", 4,
+        RegularCar regularCar = new RegularCar("Лада", "ВАЗ-2114", Color.black, "Седан", 4,
                 "Бензин", "Механическая", 1.2);
 
         regularCar.move();
@@ -38,5 +38,18 @@ public class Main {
         truck.transmissionShift();
         truck.turnOnFogLights();
         truck.cargoTransportation();
+
+        System.out.println();
+
+        // Создание обычного автомобиля с учетом интерфейса GasStation
+        RegularCar gasCar = new RegularCar("Волга", "ГАЗ-2410", Color.white, "Седан",
+                4, "Бензин", "Механическая", 2.5);
+
+        gasCar.move();
+        gasCar.refueling();
+        gasCar.wipingWindshield();
+        gasCar.wipingHeadlights();
+        gasCar.wipingMirrors();
+
     }
 }
