@@ -2,6 +2,10 @@ package homework3;
 
 import java.awt.*;
 
+/*
+@startuml
+
+ */
 public class Main {
     public static void main(String[] args) {
         // Создание обычного автомобиля (класс RegularCar)
