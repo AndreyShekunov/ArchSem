@@ -1,10 +1,14 @@
 package org.example.Models;
 
+// абстрактный класс Продукт
+
 public abstract class Product {
     private static int id = 0;
-    private String name;
-    private String description;
-    private int price;
+    private String name;          // Наименование продукта
+    private String description;   // Описание продукта
+    private int price;            // Цена продукта
+
+    // Конструктор
 
     public Product(String name, String description, int price) {
         this.id++;
