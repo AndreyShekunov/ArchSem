@@ -1,17 +1,15 @@
 package org.example.Controller;
 
 import org.example.Model.Domen.Student;
-import org.example.Model.Model;
-import org.example.View.View;
 
 import java.util.List;
 
-public class Controller {
-    private Model model;
-    private View view;
+public class Controller implements iGetController{
+    private iGetModel model;
+    private iGetView view;
     private List<Student> students;  //хранилище презентора
 
-    public Controller(Model model, View view) {
+    public Controller(iGetModel model, iGetView view) {
         this.model = model;
         this.view = view;
     }

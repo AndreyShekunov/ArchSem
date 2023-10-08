@@ -1,6 +1,9 @@
 package org.example;
 
 import org.example.Controller.Controller;
+import org.example.Controller.iGetController;
+import org.example.Controller.iGetModel;
+import org.example.Controller.iGetView;
 import org.example.Model.Domen.Student;
 import org.example.Model.Model;
 import org.example.View.View;
@@ -25,13 +28,20 @@ public class Main {
         students.add(s5);
         students.add(s6);
 
-        //создание модели
-        Model model = new Model(students);
-        //Создание представления
-        View view = new View();
+//        //создание модели
+//        Model model = new Model(students);
+//        //Создание представления
+//        View view = new View();
+//        //Создание экземпляра контроллера
+//        Controller controller = new Controller(model, view);
 
-        //Создание экземпляра контроллера
-        Controller controller = new Controller(model, view);
+        //Создание модели с архитектурными границами
+        iGetModel model = new Model(students);
+        //Создание представления с архитектурными границами
+        iGetView view = new View();
+
+        //Создание экземпляра контроллера с архитектурными границами
+        iGetController controller = new Controller(model, view);
 
         view.setController(controller);
 

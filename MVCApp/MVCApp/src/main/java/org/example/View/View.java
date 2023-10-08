@@ -1,15 +1,17 @@
 package org.example.View;
 
 import org.example.Controller.Controller;
+import org.example.Controller.iGetController;
+import org.example.Controller.iGetView;
 import org.example.Model.Domen.Student;
 
 import java.util.List;
 
-public class View {
+public class View implements iGetView {
 
-    private Controller controller;
+    private iGetController controller;
 
-    public void setController(Controller controller) {
+    public void setController(iGetController controller) {
         this.controller = controller;
     }
 
